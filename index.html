@@ -113,7 +113,26 @@
                                   </tbody>
                               </table>
                               <div id="table"></div>
-                              
+                              <div class="checkout">
+                                <h5>Home delivery at only Ksh 150?Click this button</h5>
+                                <button id="home">Delivery</button>
+                              </div>
+                      
+                            <div class="userdeliver">
+                              <form action="">
+                                  <p>Enter your details below:</p>
+                                  <div class="form-group">
+                                  <input type="text" id="name" class="form-control mb-3" value="" placeholder="Your name..." required>
+                                  <input type="number" id="phone" class="form-control mb-3" value="" placeholder="Functioning phone number" required>
+                                  <input type="text" id="place" class="form-control mb-3" value="" placeholder="where are you located?" required>
+                                  <button id="finalorder" onclick="amount()">Order</button>
+                                  </div>
+                              </form>
+                            </div>  
+                             <h4 class="pdelivery">Your Final Bill plus delivery will be:</h4>
+                             <p class="grandorder"></p>
+                            <a href="#myForm"><button id="neworder" type="button" onclick="document.location.reload(true)">new order</button></a>
+                      </div>
                    </div>
                </div>
          </div>
