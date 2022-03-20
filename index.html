@@ -51,6 +51,40 @@
             <div class="container" id="overlay">
                 <div class="menu2"> ORDER <span>HERE</span></div> 
             
+                <div class="row">
+                    <div class="col">
+                          <form action="" id="myForm">
+                            <label for="pizza">Choose Pizza size*</label><br>
+                              <select name="pizza" id="pizza" class="size">
+                                  <option value="500">Small  @ sh 400</option>
+                                  <option value="700">Medium @ sh 700</option>
+                                  <option value="900">Large @ sh 1400</option>
+                              </select><br>
+                      
+                            <label for="pizza">Favourite Crust*</label><br>
+                              <select name="crust" id="crust" class="crust">
+                                  <option value="150">Crispy @ sh 150</option>
+                                  <option value="200">Stuffed @ sh 200</option>
+                                  <option value="250">Gluten-free @ sh 250</option>
+                              </select><br>
+                            <label for="pizza">Favourite topping(s)*</label><br>
+                              <select name="crust" id="topping" class="toppings">
+                                  <option value="60">Bacon  @ sh 60</option>
+                                  <option value="60">Chicken @ sh 60</option>
+                                  <option value="60">Sausage @ sh 60</option>
+                                  <option value="120">Bacon & chicken @ sh 120</option>
+                                  <option value="120">Bacon & sausage @ sh 120</option>
+                                  <option value="120">Chicken & sausage @ sh 120</option>
+                                  <option value="180">Bacon & chicken & sausage @ sh 180</option>
+                              </select> <br>
+                            <label for="quantity">Quantity</label><br>
+                              <input type="number" id="quantity" min="1" placeholder="eg 2" required><br>
+                              <button type="submit" onclick="check()" id="send">Place Order</button>
+                      
+                          </form>
+                      </div>
+                     
+               </div>
          </div>
 
         <div class="col-6 col-sm-3" id="icons">
