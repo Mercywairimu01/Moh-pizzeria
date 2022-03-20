@@ -16,15 +16,22 @@ body{
 }
 .hero{
     text-align: center;
+    
 }
 .hero h1{
     font-style: italic;
     font-weight: bolder;
     transform:translateZ(30px);
 }
-
+.holla{
+    color:white;
+    background-image: url(/assets/thumb2-dark-brown-wood-texture-wenge-texture-dark-brown-wood-background-wood-texture-wenge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .landing{
    text-align: center;
+   
 }
 .maintext{
   font-size:3em;
@@ -38,15 +45,9 @@ body{
       text-align: center;
       
   }
-  .menu{
-      font-weight: bold;
-      font-style: oblique;
-      font-size: 2em;
-  }
-  .menu span{
-      color: rgb(240, 188, 121);
-  }
+  
   .card{
+      margin-top: 10px;
     background-color: white;
     border-radius: 20px; 
     transition: all .4s ease;
@@ -82,6 +83,13 @@ label{
     background-color:rgb(240, 188, 121);
     
 }
+#grand{
+    background-color:rgb(240, 188, 121); 
+}
+#home{
+    background-color:rgb(240, 188, 121);
+}
+
 .userdeliver{
     display: none;
     font-weight: 700;
@@ -89,11 +97,18 @@ label{
 .pdelivery{
     display: none;
 }
-#finalorder{
+.ourwork>p{
+    font-size: 2em;
+}
+#finalorder,#neworder{
     background-color:rgb(240, 188, 121) ;
 }
 .table{
     display: none;
+}
+#overlay{
+    color: white;
+    background-image: url(/assets/thumb2-dark-brown-wood-texture-wenge-texture-dark-brown-wood-background-wood-texture-wenge.jpg);
 }
 #icons{
     text-align: center;
