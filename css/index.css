@@ -23,3 +23,49 @@ body{
     transform:translateZ(30px);
 }
 
+.landing{
+   text-align: center;
+}
+.maintext{
+  font-size:3em;
+  font-style: italic;
+  }
+  .secondtext{
+  font-weight: bold;
+  font-size: 19px;
+  }
+  .section{
+      text-align: center;
+      
+  }
+  .menu{
+      font-weight: bold;
+      font-style: oblique;
+      font-size: 2em;
+  }
+  .menu span{
+      color: rgb(240, 188, 121);
+  }
+  .card{
+    background-color: white;
+    border-radius: 20px; 
+    transition: all .4s ease;
+}
+.card-footer{
+    font-style: italic;
+    font-size: 1.5em;
+}
+.card:hover{
+    box-shadow: 0 0 2rem rgba(0,0,0,.4);
+    transform: scale(1.0);
+} 
+.menu2{
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 2em;
+    margin-top: 20px;
+}
+.menu2 span{
+    color: rgb(240, 188, 121);
+}
