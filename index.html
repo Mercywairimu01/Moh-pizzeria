@@ -10,7 +10,7 @@
     <title>Moh's Pizzeria</title>
 </head>
 <body>
-   <div class="container">
+   <div class="container" id="container">
       <div class="row">
           <div class="holla">
          <div class="hero">
@@ -19,7 +19,7 @@
            </div>
           <div class="landing">
              <p class="maintext">Rain or shine, its time to dine.</p>
-             <p class="secondtext">We cook & deliver the tastiest <i>pizzas</i> right away to you designated location</p>
+             <p class="secondtext">We cook & deliver the tastiest <i>pizzas</i> right away to your designated location</p>
            </div>
         </div>
        </div>
@@ -58,9 +58,9 @@
                           <form action="" id="myForm">
                             <label for="pizza">Choose Pizza size*</label><br>
                               <select name="pizza" id="pizza" class="size">
-                                  <option value="500">Small  @ sh 400</option>
+                                  <option value="400">Small  @ sh 400</option>
                                   <option value="700">Medium @ sh 700</option>
-                                  <option value="900">Large @ sh 1400</option>
+                                  <option value="1400">Large @ sh 1400</option>
                               </select><br>
                       
                             <label for="pizza">Favourite Crust*</label><br>
@@ -87,34 +87,35 @@
                       </div>
                      <div class="col">
                               <div class="ourwork">
-                                <p>Place your order and pick it or request for Home delivery</p>
+                                <p>Place your order and pick it or request a Home delivery</p>
+                                <div class="display"></div>
                                 <p>Check your order here:</p>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Pizza Size</th>
+                                        <th scope="col">Crust</th>
+                                        <th scope="col">Toppings</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                    </thead>
+                                    
+                                    <tr id="pizzeria">
+                                        <th scope="row"></th>
+                                        <td id="quantity"></td>
+                                        <td id="size"></td>
+                                        <td id="crust"></td>
+                                        <td id="topping"></td>
+                                        <td id="total"></td>
+                                    </tr>
+                                    
+                                </table>
+                                <div id="table"></div>
                                 <button id="grand">Checkout</button>
                               </div>
-                              <div class="display"></div>
-                               <div id="list"></div>
-                              <table class="table">
-                                  <thead>
-                                  <tr>
-                                      <th scope="col">Quantity</th>
-                                      <th scope="col">Pizza Size</th>
-                                      <th scope="col">Toppings</th>
-                                      <th scope="col">Crust</th>
-                                      <th scope="col">Total</th>
-                                  </tr>
-                                  </thead>
-                                  <tbody id="pizzeria">
-                                  <tr>
-                                      <!-- <th scope="row">1</th> -->
-                                      <td id="quantity"></td>
-                                      <td id="size"></td>
-                                      <td id="topping"></td>
-                                      <td id="crust"></td>
-                                      <td id="total"></td>
-                                  </tr>
-                                  </tbody>
-                              </table>
-                              <div id="table"></div>
+                             
+                              
                               <div class="checkout">
                                 <h5>Home delivery at only Ksh 150?Click this button</h5>
                                 <button id="home">Delivery</button>
