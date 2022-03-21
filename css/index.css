@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(/assets/seamless-pattern-contour-pizzas-pizza-slices-black-background-ingredients-tomatoes-salami-cheese-mushrooms-arugula-136949216.jpg);
+    background-image: url('https://raw.githubusercontent.com/Mercywairimu01/Moh-pizzeria/main/assets/seamless-pattern-contour-pizzas-pizza-slices-black-background-ingredients-tomatoes-salami-cheese-mushrooms-arugula-136949216.jpg');
     background-size:cover;
     width: 100%;
     height: 100%;
@@ -25,7 +25,7 @@ body{
 }
 .holla{
     color:white;
-    background-image: url(/assets/thumb2-dark-brown-wood-texture-wenge-texture-dark-brown-wood-background-wood-texture-wenge.jpg);
+    background-image: url('https://raw.githubusercontent.com/Mercywairimu01/Moh-pizzeria/main/assets/images4.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -105,10 +105,11 @@ label{
 }
 .table{
     display: none;
+    color: white;
 }
 #overlay{
     color: white;
-    background-image: url(/assets/thumb2-dark-brown-wood-texture-wenge-texture-dark-brown-wood-background-wood-texture-wenge.jpg);
+    background-image: url('https://raw.githubusercontent.com/Mercywairimu01/Moh-pizzeria/main/assets/images4.jpeg');
 }
 #icons{
     text-align: center;
