@@ -127,6 +127,7 @@ $(document).ready(function(){
             $("#home").hide();
             $(".display").hide();
             $(".checkout").hide();
+            
             // $(".userdeliver").hide();
 
             function getSize(){
@@ -157,13 +158,17 @@ $(document).ready(function(){
             let customer = $("input#name").val();
             let phone = $("input#phone").val();
             let area = $("input#place").val();
+            // let location = prompt("Enter your location:")
+            // alert("it will be delivered to " + location)
     
             if ($("input#name").val() && $("input#phone").val() && $("input#place").val()!=""){
-      
-                $(".grandorder").append('<h3>'+ customer+ "You have ordered " + newCustomer.myQuantity +" pizza(s), for " + totalCost + " We have recieved your order and it will be delivered to you at "+area+ ". Prepare Ksh. "+ grandTotal +'<h3>');
-                 $(".grandorder").slideDown(1000);
+      alert(`${customer} You have ordered ${newCustomer.myQuantity} pizza(s), for ${totalCost}. We have recieved your order and it will be delivered to you at ${area}. Prepare Ksh ${grandTotal}`);
+                // $(".grandorder").append('<h3>'+ customer+ "You have ordered " + newCustomer.myQuantity +" pizza(s), for " + totalCost + " We have recieved your order and it will be delivered to you at "+area+ ". Prepare Ksh. "+ grandTotal +'<h3>');
+                //  $(".grandorder").slideDown(1000);
                  $(".userdeliver").hide();
                  $("#neworder").show();
+                 $("#finalOrder").hide()
+
               }
               else {
                 alert("Please fill in the details for delivery!");

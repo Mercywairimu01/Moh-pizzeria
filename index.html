@@ -10,20 +10,21 @@
     <title>Moh's Pizzeria</title>
 </head>
 <body>
-   <div class="container" id="container">
-      <div class="row">
-          <div class="holla">
-         <div class="hero">
-            <h1>Moh's Pizzeria</h1>
-                        
-           </div>
-          <div class="landing">
-             <p class="maintext">Rain or shine, its time to dine.</p>
-             <p class="secondtext">We cook & deliver the tastiest <i>pizzas</i> right away to your designated location</p>
-           </div>
+  <div class="container">
+    <div id="landing">
+      <div class="hero">
+          <img src="./assets/download.png" alt="logo" class="logo">
+          <h1>Moh's Pizzeria</h1>
+                      
+         </div>
+         <div class="landing">
+             <!-- <img src="./assets/pizza1.jpeg" alt=""> -->
+          <p class="maintext">Rain or shine, its time to dine.</p>
+          <p class="secondtext">We cook & deliver the tastiest <i>pizzas</i> right away <br> to your designated location</p>
         </div>
-       </div>
-       <div class="section">
+        
+     </div>
+     <div class="about">
           <!-- <div class="menu">OUR <span>OFFERS</span></div>
                  -->
             <div class="row ">
@@ -45,112 +46,115 @@
                             <div class="card-footer">Toppings</div>
                         </div>
                     </div>
-           </div>
+           
                 
         </div>
-            
-        <div class="container-fluid" id="order">
-            <div class="container" id="overlay">
-                <div class="menu2"> ORDER <span>HERE</span></div> 
-            
-                <div class="row">
-                    <div class="col">
-                          <form action="" id="myForm">
-                            <label for="pizza">Choose Pizza size*</label><br>
-                              <select name="pizza" id="pizza" class="size">
-                                  <option value="400">Small  @ sh 400</option>
-                                  <option value="700">Medium @ sh 700</option>
-                                  <option value="1400">Large @ sh 1400</option>
-                              </select><br>
-                      
-                            <label for="pizza">Favourite Crust*</label><br>
-                              <select name="crust" id="crust" class="crust">
-                                  <option value="150">Crispy @ sh 150</option>
-                                  <option value="200">Stuffed @ sh 200</option>
-                                  <option value="250">Gluten-free @ sh 250</option>
-                              </select><br>
-                            <label for="pizza">Favourite topping(s)*</label><br>
-                              <select name="crust" id="topping" class="toppings">
-                                  <option value="60">Bacon  @ sh 60</option>
-                                  <option value="60">Chicken @ sh 60</option>
-                                  <option value="60">Sausage @ sh 60</option>
-                                  <option value="120">Bacon & chicken @ sh 120</option>
-                                  <option value="120">Bacon & sausage @ sh 120</option>
-                                  <option value="120">Chicken & sausage @ sh 120</option>
-                                  <option value="180">Bacon & chicken & sausage @ sh 180</option>
-                              </select> <br>
-                            <label for="quantity">Quantity</label><br>
-                              <input type="number" id="quantity" min="1" placeholder="eg 2" required><br>
-                              <button type="submit" onclick="check()" id="send">Place Order</button>
-                      
-                          </form>
-                      </div>
-                     <div class="col">
-                              <div class="ourwork">
-                                <p>Place your order and pick it or request a Home delivery</p>
-                                <div class="display"></div>
-                                <p>Check your order here:</p>
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">Quantity</th>
-                                        <th scope="col">Pizza Size</th>
-                                        <th scope="col">Crust</th>
-                                        <th scope="col">Toppings</th>
-                                        <th scope="col">Total</th>
-                                    </tr>
-                                    </thead>
-                                    
-                                    <tr id="pizzeria">
-                                        <th scope="row"></th>
-                                        <td id="quantity"></td>
-                                        <td id="size"></td>
-                                        <td id="crust"></td>
-                                        <td id="topping"></td>
-                                        <td id="total"></td>
-                                    </tr>
-                                    
-                                </table>
-                                <div id="table"></div>
-                                <button id="grand">Checkout</button>
-                              </div>
-                             
+     </div>
+     <div class="container-fluid" id="order">
+      <div id="overlay">
+          <div class="menu2"> ORDER <span>HERE</span></div> 
+      
+          <div class="row">
+              <div class="col">
+                    <form action="" id="myForm">
+                      <label for="pizza">Choose Pizza size*</label><br>
+                        <select name="pizza" id="pizza" class="size">
+                            <option value="400">Small  @ sh 400</option>
+                            <option value="700">Medium @ sh 700</option>
+                            <option value="1400">Large @ sh 1400</option>
+                        </select><br>
+                
+                      <label for="pizza">Favourite Crust*</label><br>
+                        <select name="crust" id="crust" class="crust">
+                            <option value="150">Crispy @ sh 150</option>
+                            <option value="200">Stuffed @ sh 200</option>
+                            <option value="250">Gluten-free @ sh 250</option>
+                        </select><br>
+                      <label for="pizza">Favourite topping(s)*</label><br>
+                        <select name="crust" id="topping" class="toppings">
+                            <option value="60">Bacon  @ sh 60</option>
+                            <option value="60">Chicken @ sh 60</option>
+                            <option value="60">Sausage @ sh 60</option>
+                            <option value="120">Bacon & chicken @ sh 120</option>
+                            <option value="120">Bacon & sausage @ sh 120</option>
+                            <option value="120">Chicken & sausage @ sh 120</option>
+                            <option value="180">Bacon & chicken & sausage @ sh 180</option>
+                        </select> <br>
+                      <label for="quantity">Quantity</label><br>
+                        <input type="number" id="quantity" min="1" placeholder="eg 2" required><br>
+                        <button type="submit" onclick="check()" id="send">Place Order</button>
+                
+                    </form>
+                </div>
+               <div class="col">
+                        <div class="ourwork">
+                          <p>Place your order and pick it or request a Home delivery</p>
+                          <div class="display"></div>
+                          <p>Check your order here:</p>
+                          <table class="table">
+                              <thead>
+                              <tr>
+                                  <th scope="col">Quantity</th>
+                                  <th scope="col">Pizza Size</th>
+                                  <th scope="col">Crust</th>
+                                  <th scope="col">Toppings</th>
+                                  <th scope="col">Total</th>
+                              </tr>
+                              </thead>
                               
-                              <div class="checkout">
-                                <h5>Home delivery at only Ksh 150?Click this button</h5>
-                                <button id="home">Delivery</button>
-                              </div>
-                      
-                            <div class="userdeliver">
-                              <form action="">
-                                  <p>Enter your details below:</p>
-                                  <div class="form-group">
-                                  <input type="text" id="name" class="form-control mb-3" value="" placeholder="Your name..." required>
-                                  <input type="number" id="phone" class="form-control mb-3" value="" placeholder="Functioning phone number" required>
-                                  <input type="text" id="place" class="form-control mb-3" value="" placeholder="where are you located?" required>
-                                  <button id="finalorder" onclick="amount()">Order</button>
-                                  </div>
-                              </form>
-                            </div>  
-                             <h4 class="pdelivery">Your Final Bill plus delivery will be:</h4>
-                             <p class="grandorder"></p>
-                            <a href="#myForm"><button id="neworder" type="button" onclick="document.location.reload(true)">new order</button></a>
-                      </div>
-                   </div>
-               </div>
+                              <tr id="pizzeria">
+                                  <th scope="row"></th>
+                                  <td id="quantity"></td>
+                                  <td id="size"></td>
+                                  <td id="crust"></td>
+                                  <td id="topping"></td>
+                                  <td id="total"></td>
+                              </tr>
+                              
+                          </table>
+                          <div id="table"></div>
+                          <button id="grand">Checkout</button>
+                        </div>
+                       
+                        
+                        <div class="checkout">
+                          <h5>Home delivery at only Ksh 150?Click this button</h5>
+                          <button id="home">Delivery</button>
+                        </div>
+                
+                      <div class="userdeliver">
+                        <form action="">
+                            <p>Enter your details below:</p>
+                            <div class="form-group">
+                            <input type="text" id="name" class="form-control mb-3" value="" placeholder="Your name..." required>
+                            <input type="number" id="phone" class="form-control mb-3" value="" placeholder="Functioning phone number" required>
+                            <input type="text" id="place" class="form-control mb-3" value="" placeholder="where are you located?" required>
+                            <button id="finalorder" onclick="amount()">Order</button>
+                            </div>
+                        </form>
+                      </div>  
+                       <h4 class="pdelivery">Your Final Bill plus delivery will be:</h4>
+                       <p class="grandorder"></p>
+                      <a href="#myForm"><button id="neworder" type="button" onclick="document.location.reload(true)">new order</button></a>
+                </div>
+             </div>
          </div>
+   </div>
+   <div class="col" id="icons">
+    <h5>Follow us</h5>
+   
+        <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <h6>Made by Mercy Wambui <br> <b>(c) 2022.</b></h6>        
+     
+  </div>
+</div>  
+  
 
-        <div class="col-6 col-sm-3" id="icons">
-          <h5>Follow us</h5>
-         
-              <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-            <h6>Made by Mercy Wambui <br> <b>(c) 2022.</b></h6>        
-           
-        </div>
-    </div>  
-        
+  </div>
+
+       
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
      <script src="./js/index.js"></script>
     

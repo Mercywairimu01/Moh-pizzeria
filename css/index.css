@@ -6,13 +6,12 @@
 }
 
 body{
-    background-image: url('https://raw.githubusercontent.com/Mercywairimu01/Moh-pizzeria/main/assets/seamless-pattern-contour-pizzas-pizza-slices-black-background-ingredients-tomatoes-salami-cheese-mushrooms-arugula-136949216.jpg');
-    background-size:cover;
+    
     width: 100%;
     height: 100%;
 }
 .container{
-    background-color: rgb(230, 226, 223);
+    background-color: rgb(240, 116, 22);
 }
 .hero{
     text-align: center;
@@ -22,12 +21,16 @@ body{
     font-style: italic;
     font-weight: bolder;
     transform:translateZ(30px);
+    color: white;
 }
 .holla{
     color:white;
     background-image: url('https://raw.githubusercontent.com/Mercywairimu01/Moh-pizzeria/main/assets/images4.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+button{
+    border-radius: 10px 4px 10px 1px;
 }
 .landing{
    text-align: center;
@@ -36,10 +39,12 @@ body{
 .maintext{
   font-size:3em;
   font-style: italic;
+  color: white;
   }
   .secondtext{
   font-weight: bold;
   font-size: 19px;
+  color: white;
   }
   .section{
       text-align: center;
@@ -109,9 +114,25 @@ label{
 }
 #overlay{
     color: white;
-    background-image: url('https://raw.githubusercontent.com/Mercywairimu01/Moh-pizzeria/main/assets/images4.jpeg');
+    /* background-image: url('https://raw.githubusercontent.com/Mercywairimu01/Moh-pizzeria/main/assets/images4.jpeg'); */
+    background-color: rgba(0, 0, 0, 0.699);
+
+    border-radius: 50px 50px 50px 50px;
 }
 #icons{
     text-align: center;
-    margin-left: 450px;
+   
 }
+.logo{
+    border-radius: 50%;
+    width: 100px;
+    height: 90px;
+}
+.landing{
+    text-align: center;
+    margin-top: 50px;
+    /* margin-left: 150px; */
+}
+
+
+
